@@ -49,7 +49,7 @@ int main()
 	int dec_days;
 	dec_days = 31;
 
-    int leap_year[12] = {jan_days, (feb_days + 1), mar_days,
+	int leap_year[12] = {jan_days, (feb_days + 1), mar_days,
 		apr_days, may_days, jun_days, jul_days,
 		aug_days, sep_days, oct_days, nov_days,
 		dec_days};
@@ -94,7 +94,7 @@ int main()
 float interest_one_month_leapyr(float balance)
 {
 	float end_bal;
-	end_bal = (balance) * (1+(0.0001/366));
+	end_bal = (balance) * (1+(0.03 / 100)/366));
 	return(end_bal);
 }
 
@@ -114,7 +114,7 @@ float leap_year_interest(float balance, int array[])
 float interest_one_month_regyr(float balance)
 {
 	float end_bal;
-	end_bal = (balance) * (1+(0.0003/365));
+	end_bal = (balance) * (1+(0.03 / 100)/365));
 	return(end_bal);
 }
 

@@ -22,39 +22,26 @@ float reg_year_interest(float balance, float array[]);
 int main()
 {
 
-	int jan_days;
-	jan_days = 31;
-	int feb_days;
-	feb_days = 28;
-	int mar_days;
-	mar_days = 31;
-	int apr_days;
-	apr_days = 30;
-	int may_days;
-	may_days = 31;
-	int jun_days;
-	jun_days = 30;
-	int jul_days;
-	jul_days = 31;
-	int aug_days;
-	aug_days = 31;
-	int sep_days;
-	sep_days = 30;
-	int oct_days;
-	oct_days = 31;
-	int nov_days;
-	nov_days = 30;
-	int dec_days;
-	dec_days = 31;
 
-	int leap_year;
-	leap_year = jan_days + (feb_days + 1) + mar_days +
+	int jan_days = 31;
+	int feb_days = 28;
+	int mar_days = 31;
+	int apr_days = 30;
+	int may_days = 31;
+	int jun_days = 30;
+	int jul_days = 31;
+	int aug_days = 31;
+	int sep_days = 30;
+	int oct_days = 31;
+	int nov_days = 30;
+	int dec_days = 31;
+
+	int leap_year = jan_days + (feb_days + 1) + mar_days +
 		apr_days + may_days + jun_days + jul_days +
 		aug_days + sep_days + oct_days + nov_days +
 		dec_days;
 
-	int reg_year;
-	reg_year = jan_days + feb_days + mar_days +
+	int reg_year = jan_days + feb_days + mar_days +
 		apr_days + may_days + jun_days + jul_days +
 		aug_days + sep_days + oct_days + nov_days +
 		dec_days;
@@ -95,23 +82,22 @@ int main()
 		aug_deposit, sep_deposit, oct_deposit, nov_deposit,
 		dec_deposit};
 
-	float balance;
-	balance = 0;
+	float balance = 0;
 
-	balance = leap_year_interest(balance, leap_deposit);
+	balance = year_interest(balance, leap_deposit);
 	for (int reg_yr_period_1=0;reg_yr_period_1<3;reg_yr_period_1++)
 	{
-		balance = reg_year_interest(balance, reg_deposit);
+		balance = year_interest(balance, reg_deposit);
 	}
-	balance = leap_year_interest(balance, leap_deposit);
+	balance = year_interest(balance, leap_deposit);
 	for(int reg_yr_period_2=0;reg_yr_period_2<3;reg_yr_period_2++)
 	{
-		balance = reg_year_interest(balance, reg_deposit);
+		balance = year_interest(balance, reg_deposit);
 	}
-	balance = leap_year_interest(balance, leap_deposit);
+	balance = year_interest(balance, leap_deposit);
 	for(int reg_yr_period_3=0;reg_yr_period_3<2;reg_yr_period_3++)
 	{
-		balance = reg_year_interest(balance, reg_deposit);
+		balance = year_interest(balance, reg_deposit);
 	}
 
 	printf("The final balance is $%f after 10 years\n", balance);
@@ -134,17 +120,7 @@ float interest_one_month(float balance)
 	return(end_bal);
 }
 
-float leap_year_interest(float balance, float array[])
-{
-	for (int month=0;month<12;month++)
-	{
-		balance = balance + array[month];
-		balance = interest_one_month(balance);
-	}
-	return(balance);
-}
-
-float reg_year_interest(float balance, float array[])
+float year_interest(float balance, float array[])
 {
 	for (int month=0;month<12;month++)
 	{
