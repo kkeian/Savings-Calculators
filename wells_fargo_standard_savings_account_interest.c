@@ -79,7 +79,7 @@ int main()
 
 float interest_one_month_leapyr(float balance)
 {
-	float end_bal = end_bal = (balance) * (1+(0.0001/366));
+	float end_bal = end_bal = (balance) * (1+((0.01 / 100)/366));
 	return(end_bal);
 }
 
@@ -98,7 +98,7 @@ float leap_year_interest(float balance, int array[])
 
 float interest_one_month_regyr(float balance)
 {
-	float end_bal = end_bal = (balance) * (1+(0.0001/365));
+	float end_bal = end_bal = (balance) * (1+((0.01 / 100)/365));
 	return(end_bal);
 }
 

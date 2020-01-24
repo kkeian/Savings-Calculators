@@ -116,7 +116,7 @@ int main()
 float interest_one_month(float balance)
 {
 	float end_bal;
-	end_bal = (balance) * (1+(0.0001/12));
+	end_bal = (balance) * (1+((0.01 / 100)/12));
 	return(end_bal);
 }
 
