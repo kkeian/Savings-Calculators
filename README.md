@@ -74,9 +74,9 @@ gcc <bank_name>_standard_savings_account_interest_calculator.c -o <name of progr
 
 ## Built using
 
-GNU Compiler Collection: https://gcc.gnu.org/
-Windows Subsystem for Linux (WSL): https://docs.microsoft.com/en-us/windows/wsl/install-win10
-Xubuntu: https://xubuntu.org/
+* GNU Compiler Collection: https://gcc.gnu.org/
+* Windows Subsystem for Linux (WSL): https://docs.microsoft.com/en-us/windows/wsl/install-win10
+* Xubuntu: https://xubuntu.org/
 
 ## Authors
 
