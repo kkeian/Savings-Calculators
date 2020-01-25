@@ -60,13 +60,7 @@ You can obtain notepad++ through the following link: https://notepad-plus-plus.o
 
 ```
 mkdir <dir_name>
-```
-
-```
 git init
-```
-
-```
 git clone  https://github.com/kkeian/c_programs
 ```
 
