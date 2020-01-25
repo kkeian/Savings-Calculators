@@ -84,5 +84,4 @@ gcc <bank_name>_standard_savings_account_interest_calculator.c -o <name of progr
 
 ## License
 
-This project is licensed under the GNU Generl Public License, version 2 - see the [LICENSE.md](LICENSE.md) file for details
-https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+This project is licensed under the GNU General Public License (GPL), version 2 - see the [LICENSE.md](./blobl/master/LICENSE) file for details
