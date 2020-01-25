@@ -52,7 +52,7 @@ emacs <source_code.c>
 
 For Windows users:
 Notepad is pre-installed on Windows systems and works for basic text editing.
-Notepad++ is a feature-rich version of Notepad that allows for more efficient editing of source code files.
+Notepad++ is a feature-rich open source text editor that allows for more efficient editing of source code files.
 
 You can obtain notepad++ through the following link: https://notepad-plus-plus.org/downloads/
 
